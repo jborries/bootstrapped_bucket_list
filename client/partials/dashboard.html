@@ -31,7 +31,7 @@
             <option ng-repeat="user in users" ng-show="user.name!=current_user.name" placeholder="Tag your friends" value={{user._id}}>{{user.name}}</option>
         </select>
         <input type="hidden" ng-model='current_user._id' style="margin-left:10px;">
-        <input type="submit" name="submit" value="Add to list" style="margin-left:10px;" >
+        <input class="btn btn-primary" type="submit" name="submit" value="Add to list" style="margin-left:10px;">
     </form>
     <div ng-controller='dashboardController'>
         <p>{{list.errors.title.message}}</p>

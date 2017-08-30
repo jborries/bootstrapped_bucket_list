@@ -22,7 +22,7 @@ var ListSchema = new mongoose.Schema({
     tagged: {
         type: mongoose.Schema.ObjectId,
         ref: 'User',
-        required: true
+        required: false,
     },
 
     status: {

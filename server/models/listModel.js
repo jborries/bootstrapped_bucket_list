@@ -10,7 +10,7 @@ var ListSchema = new mongoose.Schema({
     title: {
         type: String,
         required: true,
-        minlength: [5, "ALERT: TITLE MUST BE AT LEAST 5 LETTERS"]
+        minlength: [4, "ALERT: TITLE MUST BE AT LEAST 4 LETTERS"]
     },
 
     description: {

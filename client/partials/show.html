@@ -1,11 +1,23 @@
 <div ng-controller='showController'>
-    <a href="#/">Bucket Lists</a>
-    <a href="#/dashboard">Home</a>
-    <a href="#/logout">logout</a>
 
     <hr>
-
+    <div class="header clearfix">
+      <nav>
+        <ul class="nav nav-pills float-right">
+          <li class="nav-item">
+            <a class="nav-link active" href="#/dashboard">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#/logout">Logout</a>
+          </li>
+        </ul>
+      </nav>
+      <h3 class="text-muted">Bucket Lists</h3>
+    </div>
+    <hr>
+<div class="jumbotron">
   <h2>{{userfound.name}} Bucket List Items</h2>
 
   <h3 ng-repeat='list in lists' ng-show="list._creator.name == userfound.name || list.tagged.name == userfound.name">{{list._creator.name}} || {{list.title}} - {{list.description}} and tagged {{list.tagged.name}}...-{{list.createdAt | date:'MMM. dd, yyyy'}}...</h3>
+</div><!--end jumbotron-->
 </div>

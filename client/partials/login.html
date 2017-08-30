@@ -1,10 +1,13 @@
+<div class="jumbotron">
+
 <div ng-controller='loginController'>
 
-  <h2>Bucket Lists</h2>
-  <form ng-submit="login(user)">
+  <h2 class="form-signin-heading">Please Sign In</h2>
+  <form ng-submit="login(user)" class="form-signin">
     <label>Please Enter Your Name:</label>
     <input type="text" ng-model="user.name">
-    <input type="submit" value="Let's go!">
+    <input type="submit" value="Let's go!" class="btn btn-primary">
   </form>
 
 </div>
+</div><!--End jumbotron-->
